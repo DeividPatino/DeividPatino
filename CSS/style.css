@@ -221,7 +221,6 @@ span {
     text-align: left;
     font-size: 1.6rem;
     line-height: 1.6;
-    box-shadow: 0 8px 24px rgba(0, 150, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 1 1 300px;
 }
@@ -230,7 +229,7 @@ span {
 .objetivo-tarjeta:hover,
 .vision-tarjeta:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 150, 255, 0.3);
+    box-shadow: 0 0 25px var(--main-color);
 }
 
 .sobre-mi-tarjeta h1,
@@ -245,4 +244,93 @@ span {
 .objetivo-tarjeta p,
 .vision-tarjeta p {
     font-size: 1.8rem;
+}
+
+/* Tecnologías */
+
+.sobre-mi-tecnologias h2 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi-tecnologias p {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.tecnologias-contenedor {
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.lenguaje-contenedor h1,
+.framework-contenedor h1,
+.herramientas-contenedor h1,
+.recursos-contenedor h1 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;  
+}
+
+.lenguaje-contenedor,
+.framework-contenedor,
+.herramientas-contenedor,
+.recursos-contenedor {
+    display: flex;
+    padding: 4rem 3rem;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    max-width: 1000px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.lenguaje-contenedor span,
+.framework-contenedor span,
+.herramientas-contenedor span,
+.recursos-contenedor span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 0.8rem;
+    background-color: #1a1a1a;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    transition: transform 0.2s, background-color 0.3s;
+
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.lenguaje-contenedor span:hover,
+.framework-contenedor span:hover,
+.herramientas-contenedor span:hover,
+.recursos-contenedor span:hover {
+    background-color: #2a2a2a;
+    transform: scale(1.05);
+}
+
+.lenguaje-contenedor i,
+.framework-contenedor i,
+.herramientas-contenedor i,
+.recursos-contenedor i {
+    font-size: 3rem;
+    color: var(--main-color);
 }

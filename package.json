@@ -18,6 +18,7 @@
   "homepage": "https://github.com/DeividPatino/mi-portafolio#readme",
   "description": "",
   "dependencies": {
+    "devicon": "^2.16.0",
     "remixicon": "^4.6.0"
   }
 }
