@@ -483,3 +483,201 @@ span {
     font-size: 18px;
     vertical-align: middle;
 }
+
+/* Responsive Design */
+
+/* Responsive para tablets grandes y laptops medianas */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 3rem 8%;
+  }
+
+  section {
+    padding: 10rem 8%;
+  }
+}
+
+/* Responsive para tablets y pantallas medianas */
+@media (max-width: 992px) {
+  html {
+    font-size: 52%;
+  }
+
+  .header {
+    padding: 3rem 6%;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    margin-left: 2rem;
+  }
+
+  .inicio,
+  .sobre-mi {
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .inicio-contenido,
+  .sobre-mi-contenido {
+    align-items: center;
+    text-align: center;
+  }
+
+  .inicio-imagen img {
+    width: 45vw;
+  }
+
+  .tarjetas-contenedor,
+  .tecnologias-contenedor,
+  .proyectos-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lenguaje-contenedor,
+  .framework-contenedor,
+  .herramientas-contenedor,
+  .recursos-contenedor {
+    width: 90%;
+  }
+
+  .proyectos h2 {
+    font-size: 6rem;
+  }
+
+  .proyectos p {
+    text-align: center;
+  }
+}
+
+/* Responsive para móviles grandes y pantallas pequeñas */
+@media (max-width: 768px) {
+  html {
+    font-size: 48%;
+  }
+
+  #menu-icono {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 20;
+    color: var(--main-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 1rem;
+  }
+
+  #menu-icono.active {
+    transform: rotate(90deg);
+    color: var(--main-color);
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--second-color);
+    padding: 2rem 0;
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    border-top: 2px solid var(--main-color);
+    box-shadow: none;
+  }
+
+  .nav.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav a {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav a:hover {
+    color: var(--main-color);
+    transform: scale(1.05);
+  }
+
+  .inicio-contenido h1 {
+    font-size: 4.5rem;
+  }
+
+  .inicio-contenido h3 {
+    font-size: 2.5rem;
+  }
+
+  .inicio-imagen img {
+    width: 60vw;
+  }
+
+  .proyectos h2 {
+    font-size: 5rem;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+
+/* Responsive para móviles pequeños */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .logo {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .header {
+    padding: 2rem 5%;
+  }
+
+  .inicio-contenido h1 {
+    font-size: 4rem;
+  }
+
+  .inicio-contenido h3 {
+    font-size: 2rem;
+  }
+
+  .inicio-imagen img {
+    width: 70vw;
+  }
+
+  .tarjetas-contenedor,
+  .proyectos-contenedor,
+  .tecnologias-contenedor {
+    gap: 2rem;
+  }
+
+  .social-iconos a,
+  .proyectos-iconos a {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+    padding: 15px 5px;
+  }
+}
