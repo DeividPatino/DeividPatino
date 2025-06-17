@@ -54,10 +54,6 @@ body {
     transform: scale(1.1);
 }
 
-.logo span {
-    text-shadow: 0 0 10px var(--main-color);
-}
-
 .nav a {
     font-size: 1.9rem;
     color: var(--text-color);
