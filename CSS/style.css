@@ -343,6 +343,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-top: 3rem;
 }
 
 .proyectos p {
@@ -399,7 +400,14 @@ span {
     text-align: center;
     font-size: 2.5rem;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.contenido-proyecto p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .imagen-proyecto-1 {
@@ -420,29 +428,42 @@ span {
 .tecnologias-proyecto span {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0rem;
   font-size: 1.5rem;
-  width: 100%;
-  height: 100%;
+  width: 65px;
 }
 
 .tecnologias-proyecto span i {
   font-size: 2rem;
 }
 
-.ver-proyecto {
-    padding: 1rem 2rem;
-    background-color: var(--main-color);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.6rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.proyectos-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 65px;
+    height: 65px;
+    font-size: 2.5rem;
 }
 
-.ver-proyecto:hover {
-    background-color: var(--bg-color);
+.proyectos-iconos a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
 }
 
+.proyectos-iconos a:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-0.5rem);
+}
